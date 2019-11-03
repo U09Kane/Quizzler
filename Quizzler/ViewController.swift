@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let questions = QuestionBank()
+    
     //Place your instance variables here
     
     
@@ -20,7 +22,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        questionLabel.text = questions.list[0].questionText
     }
 
 
