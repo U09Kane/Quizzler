@@ -50,8 +50,8 @@ class ViewController: UIViewController {
       questionIndex += 1
     } else {
       let alert = UIAlertController(
-        title: "Great Job",
-        message: "🎵 You're the best around and nothing's ever gonna keep you down!🎵",
+        title: "You're Done!",
+        message: "Want to go again?",
         preferredStyle: .alert
       )
       
@@ -71,9 +71,9 @@ class ViewController: UIViewController {
     let answerCorrect = questions.list[questionIndex].answer
     if answerSelected == answerCorrect {
       correctAnswerCount += 1
-      print("correct")
+      ProgressHUD.showSuccess("Correct!")
     } else {
-      print("wrong")
+      ProgressHUD.showError("Wrong")
     }
   }
   
