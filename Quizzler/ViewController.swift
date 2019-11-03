@@ -9,47 +9,44 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    let questions = QuestionBank()
-    
-    //Place your instance variables here
-    
-    
-    @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var scoreLabel: UILabel!
-    @IBOutlet var progressBar: UIView!
-    @IBOutlet weak var progressLabel: UILabel!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        questionLabel.text = questions.list[0].questionText
-    }
-
-
-    @IBAction func answerPressed(_ sender: AnyObject) {
   
-    }
+  let questions = QuestionBank()
+  
+  //Place your instance variables here
+  
+  
+  @IBOutlet weak var questionLabel: UILabel!
+  @IBOutlet weak var scoreLabel: UILabel!
+  @IBOutlet var progressBar: UIView!
+  @IBOutlet weak var progressLabel: UILabel!
+  
+  override func viewDidLoad() {
+      super.viewDidLoad()
+      questionLabel.text = questions.list[0].questionText
+  }
+
+
+  @IBAction func answerPressed(_ sender: AnyObject) {
+
+  }
+  
+  
+  func updateUI() {
     
-    
-    func updateUI() {
+  }
+  
+
+  func nextQuestion() {
       
-    }
-    
-
-    func nextQuestion() {
-        
-    }
-    
-    
-    func checkAnswer() {
-        
-    }
-    
-    
-    func startOver() {
-       
-    }
-    
-
-    
+  }
+  
+  
+  func checkAnswer() {
+      
+  }
+  
+  
+  func startOver() {
+     
+  }
 }
